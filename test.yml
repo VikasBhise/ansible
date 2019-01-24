@@ -1,6 +1,6 @@
+---
 - hosts: localhost
+  gather_facts: no
   tasks:
-      - name: Create file
-        file:
-            path: /tmp/yallo
-            state: touch
+    - name: Print message
+      debug: msg="Hello from Ansible!!"
